@@ -1,6 +1,5 @@
 module main
 
-import markdown
 import os
 
 // A project case study loaded from content/projects/<slug>.md.
@@ -87,18 +86,12 @@ fn parse_fm(fm string) map[string][]string {
 		val := line[idx + 1..].trim_space()
 		folded = false
 		if val == '>-' || val == '>' || val == '|' {
-			m[key] = ['>']
+			m[key] = []string{}
 			folded = true
 		} else if val == '' {
 			m[key] = []string{}
 		} else {
 			m[key] = [strip_quotes(val)]
-		}
-	}
-	// Unfold the placeholder: a folded scalar collected its lines into element 0.
-	for k, v in m {
-		if v.len == 1 && v[0] == '>' {
-			m[k] = ['']
 		}
 	}
 	return m
@@ -159,7 +152,7 @@ fn load_projects(content_dir string) []Project {
 			started:  fm_str(m, 'started')
 			tags:     fm_list(m, 'tags')
 			slug:     slug
-			html:     markdown.to_html(body)
+			html:     md_to_html(body)
 		}
 	}
 	out.sort_with_compare(fn (a &Project, b &Project) int {
