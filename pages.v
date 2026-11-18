@@ -9,7 +9,6 @@ const site_email = 'info@mahdir.ir'
 const site_location = 'Iran'
 const github_url = 'https://github.com/metif12'
 const linkedin_url = 'https://www.linkedin.com/in/metif12/'
-const x_url = 'https://x.com/metif12'
 
 fn esc(s string) string {
 	return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"',
@@ -214,7 +213,6 @@ fn render_contact() string {
 		['mailto:${site_email}', site_email, 'Email'],
 		[github_url, 'github.com/metif12', 'GitHub'],
 		[linkedin_url, 'LinkedIn', 'LinkedIn'],
-		[x_url, 'x.com/metif12', 'X'],
 	]
 	mut rows := ''
 	for c in channels {
