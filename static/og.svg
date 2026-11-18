@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <radialGradient id="spot" cx="0.78" cy="0.18" r="0.62">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#glow)" />
+  <rect width="1200" height="630" fill="url(#spot)" />
+
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="80" y="176" fill="#94a3b8" font-size="30" font-weight="500" letter-spacing="-0.4">
+      Mahdi Ramezaan Zaade
+    </text>
+
+    <text x="80" y="300" fill="#f8fafc" font-size="86" font-weight="700" letter-spacing="-2.6">
+      Full-stack developer
+    </text>
+
+    <text x="80" y="368" fill="#38bdf8" font-size="42" font-weight="600" letter-spacing="-0.8">
+      TypeScript &#183; Go &#183; V
+    </text>
+
+    <text x="80" y="452" fill="#94a3b8" font-size="29" font-weight="400" letter-spacing="-0.3">
+      I build web apps where the interesting part is the boundary.
+    </text>
+
+    <line x1="80" y1="524" x2="1120" y2="524" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.5" />
+
+    <text x="80" y="572" fill="#94a3b8" font-size="25" font-weight="500" letter-spacing="-0.2">
+      github.com/metif12
+    </text>
+    <text x="1120" y="572" fill="#94a3b8" font-size="25" font-weight="500" text-anchor="end" letter-spacing="-0.2">
+      mahdir.ir
+    </text>
+  </g>
+</svg>

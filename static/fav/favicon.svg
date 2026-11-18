@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MRZ">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+
+  <g fill="#f8fafc">
+    <path d="M10 18h4.9l4.9 13.4V18h4.2v28h-4.8l-5-13.6V46h-4.2z" />
+    <path d="M26.4 18h4.7v28h-4.7z" />
+    <path d="M42.2 18h4.7v28h-4.7z" />
+  </g>
+
+  <path d="M33.1 18h5.1l6.2 28h-4.9l-1.1-5.3h-6.4l-1.1 5.3h-4.8z m2.2 17.7h3.8l-1.9-9.2z" fill="#38bdf8" />
+
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="1.5" />
+</svg>
