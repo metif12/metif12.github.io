@@ -28,7 +28,9 @@ jobs:
         run: |
           curl -fsSL -o /tmp/v.zip https://github.com/vlang/v/releases/download/0.5.2/v_linux.zip
           sudo unzip -q /tmp/v.zip -d /opt/v
-          echo "/opt/v" >> "$GITHUB_PATH"
+          VEXE=$(find /opt/v -maxdepth 3 -name v -type f -executable | head -1)
+          echo "V binary: $VEXE"
+          echo "$(dirname "$VEXE")" >> "$GITHUB_PATH"
 
       - name: Build the static site
         run: v run . build dist
