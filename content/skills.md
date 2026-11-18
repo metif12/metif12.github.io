@@ -39,7 +39,7 @@
       note: "Model Context Protocol servers in Go: tools, schemas, stdio and streamable HTTP."
     - name: Language implementation
       note: >-
-        Readers, printers and evaluators. vlip: a CEK machine with an explicit
+        Readers, printers and evaluators. blip: a CEK machine with an explicit
         continuation stack, so tail calls reuse the frame instead of pushing it —
         a quarter-million of them finish at depth zero.
     - name: Testing
@@ -47,7 +47,7 @@
   proof:
     - personal-site
     - fluxget
-    - vlip
+    - blip
 
 - domain: Infrastructure
   blurb: >-
@@ -101,4 +101,4 @@
     - name: Writing
       note: Notes and essays, mostly about the edges of tools.
   proof:
-    - vlip
+    - blip
