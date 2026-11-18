@@ -249,7 +249,11 @@ fn md_blocks(lines []string) []string {
 					}
 					break
 				}
-				text := if ordered { lt[lt.index(' ') or { 0 } + 1..] } else { lt[2..] }
+				mut text := lt[2..]
+				if ordered {
+					sp := lt.index(' ') or { 0 }
+					text = lt[sp + 1..]
+				}
 				items << md_inline(text.trim_space())
 				i++
 			}
